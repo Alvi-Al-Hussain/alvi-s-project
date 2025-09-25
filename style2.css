@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: black;
+    margin-bottom: 250px;
+}
+
+
+.main {
+    background-image: url(https://greekherald.com.au/wp-content/uploads/2022/04/netflix-library-photo-scaled-1.jpg);
+    height: 90vh;
+    background-size: cover;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.main .box {
+    height: 90vh;
+    width: 100%;
+    opacity: 0.69;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+}
+
+nav img {
+    color: red;
+    width: 114px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    gap: 5px;
+    font-family: "Martel Sans", sans-serif;
+    height: calc(100% - 62px);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.hero>:nth-child(1),
+.hero>:nth-child(2) {
+    text-align: center;
+    font-weight: 900;
+    font-size: 56px;
+}
+
+.hero>:nth-child(3) {
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.hero>:nth-child(4) {
+    text-align: center;
+}
+
+.separation {
+    height: 7px;
+    background-color: rgb(51, 47, 47);
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(59, 57, 57, 0.644);
+    border-radius: 4px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 3px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.main input {
+    color: white;
+    padding: 7px 101px 8px 14px;
+    font-size: 12px;
+    font-weight: 900;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(197, 192, 192, 0.7);
+}
+.first{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    margin: auto;
+    
+}
+.secimg{
+    position: relative;
+}
+.secimg img{
+    width: 511px;
+    position: relative;
+    z-index: 1;
+}
+.secimg video{
+    position: absolute;
+width: 370.5px;
+    top: 112.5px;
+    left: 69.5px;
+}
+.first div{
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+section.first>div :nth-child(1){
+    font-size: 48px;
+    font-weight: bolder;
+}
+section.first>div :nth-child(2){
+    font-size: 20px;
+    font-weight: 400;
+}
+.faq h2{
+    text-align: center;
+    font-size: 48px;
+}
+.faq{
+    color: white;
+    padding: 34px;
+}
+.faqbox:hover{
+    background-color: #414141;
+}
+.faqbox svg{
+    filter: invert(1);
+}
+.faqbox{
+    transition: all 0.2s ease-in-out;
+    background-color: #2d2d2d;
+    display: flex;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 34px auto;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 24px;}
+footer{
+color: white;
+    max-width: 60vw;
+    margin: auto;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+   padding: 34px;
+   justify-content: center;
+   align-items: center;
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+}
+footer .questions{
+    color: white;
+    padding: 34px 0;
+}
+footer a{
+    text-decoration-color: #2d2d2d;
+    color: #bdb9b9;
+font-size: 14px;
+}
+
+    .last{
+        margin-top: 80px;
+    }
+     @media  screen and (max-width:1300px){
+        .first{
+            flex-wrap: wrap;
+        }
+        .footer{
+            grid-template-columns: 1fr 1fr;
+        }
+        
+        .secimg video{
+            width: 240.5px;
+    top: 86.5px;
+    left: 43.5px;
+        }
+        .secimg img {
+    width: 333px;
+        }
+    .hero>:nth-child(1),
+.hero>:nth-child(2) {
+    font-size: 32px;
+}
+.hero>:nth-child(3) {
+    font-size: 18px;
+}
+.main input {
+    color: white;
+    padding: 7px 40px 8px 12px;}
+
+    .btn-red {
+    padding: 3px 14px;}
+    .hero-buttons {
+    flex-direction: column;
+}
+.footer{
+    gap: 15px;
+}
+nav{
+    max-width: 95vw;
+}
+.span{
+    font-size: 12px;
+    
+}
+.last{
+    font-size: 12px;
+
+}
+    }
